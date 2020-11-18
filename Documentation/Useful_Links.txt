@@ -1,0 +1,13 @@
+
+
+Managing Git in Raspberry Pi:
+https://behind-the-scenes.net/getting-started-with-private-projects-on-raspbian-and-bitbucket/
+
+Learning Linux For Embedded Systems:
+https://www.embedded.com/learning-linux-for-embedded-systems/ 
+
+Embedded Linux Conference 2018:
+https://www.youtube.com/playlist?list=PLbzoR-pLrL6qAnHzPdrTxwCUWPja5KnOq 
+
+The Embedded Linux Quick Start Guide:
+https://elinux.org/images/1/1e/01-linux-quick-start.pdf 
