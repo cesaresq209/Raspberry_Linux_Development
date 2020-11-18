@@ -1,4 +1,4 @@
-
+/***************Information Links **************************************/
 
 Managing Git in Raspberry Pi:
 https://behind-the-scenes.net/getting-started-with-private-projects-on-raspbian-and-bitbucket/
@@ -11,3 +11,16 @@ https://www.youtube.com/playlist?list=PLbzoR-pLrL6qAnHzPdrTxwCUWPja5KnOq
 
 The Embedded Linux Quick Start Guide:
 https://elinux.org/images/1/1e/01-linux-quick-start.pdf 
+
+Raspberry Pi Remote Setup:
+https://medium.com/@anujdev11/communication-between-arduino-and-raspberry-pi-using-nrf24l01-818687f7f363 
+
+/***************Projects**************************************/
+Marty + Robotic Arm:
+https://www.youtube.com/watch?v=x5tgaOMdPvs
+
+Open Cat:
+https://thenextweb.com/creativity/2018/03/05/forget-aibo-heres-opencat-a-3d-printable-pi-powered-open-source-cat-robot/
+
+Drawing Robot:
+https://www.brachiograph.art/ 
