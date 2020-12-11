@@ -8,6 +8,7 @@ https://www.embedded.com/learning-linux-for-embedded-systems/
 
 Embedded Linux Conference 2018:
 https://www.youtube.com/playlist?list=PLbzoR-pLrL6qAnHzPdrTxwCUWPja5KnOq 
+https://www.youtube.com/c/LinuxfoundationOrg/videos
 
 The Embedded Linux Quick Start Guide:
 https://elinux.org/images/1/1e/01-linux-quick-start.pdf 
@@ -17,6 +18,12 @@ https://medium.com/@anujdev11/communication-between-arduino-and-raspberry-pi-usi
 
 Embedded Linux:
 https://blog.kernelcare.com/which-linux-distro-is-best-for-embedded-development?#Which-Linux-Distro-is-Best-for-Embedded-Developmen
+
+ARM Linux Training:
+https://www.arm.com/resources/education/online-courses/embedded-linux
+
+Raspberry Training:
+https://www.futurelearn.com/courses/getting-started-with-your-raspberry-pi
 
 /***************Projects**************************************/
 Marty + Robotic Arm:
