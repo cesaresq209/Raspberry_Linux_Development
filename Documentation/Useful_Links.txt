@@ -15,6 +15,9 @@ https://elinux.org/images/1/1e/01-linux-quick-start.pdf
 Raspberry Pi Remote Setup:
 https://medium.com/@anujdev11/communication-between-arduino-and-raspberry-pi-using-nrf24l01-818687f7f363 
 
+Embedded Linux:
+https://blog.kernelcare.com/which-linux-distro-is-best-for-embedded-development?#Which-Linux-Distro-is-Best-for-Embedded-Developmen
+
 /***************Projects**************************************/
 Marty + Robotic Arm:
 https://www.youtube.com/watch?v=x5tgaOMdPvs
