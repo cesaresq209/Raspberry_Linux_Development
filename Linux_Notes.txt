@@ -1,0 +1,128 @@
+
+/*********************************** General Notes ******************************************************* *//
+-The /boot directory contains the few essential files needed to boot the system. For every alternative kernel
+ installed on the system there are four files:
+	*vmlinuz: The compressed Linux kernel, required for booting.
+	*initramfs: The initial ram filesystem, required for booting, sometimes called initrd, not initramfs.
+	*config: The kernel configuration file, only used for debugging and bookkeeping.
+	*System.map: Kernel symbol table, only used for debugging.
+	
+- Process Priority: The priority for a process can be set by specifying a nice value for the process. The lower 
+  the nice value, the higher the priority. A process with a high nice value simply allows other processes to be
+  executed first. In Linux, a nice value of -20 represents the highest priority and +19 represents the lowest. 
+  Priority can be modified with the renice command. Only the super user can assign more priority.
+  
+- Linux Text Editors:
+	*nano (Basic Editor)
+	*gedit (Basic Editor)
+	*vi (Advanced Editor)
+	*emacs (Advanced Editor)
+	*An alternative is to use echo repeatedly ( (>) will send the output of a command to a file, two of them (>>) 
+	 will append the new output to an existing file):
+		$ echo line one > myfile
+		$ echo line two >> myfile
+		$ echo line three >> myfile
+  
+- at utility program: used to execute any non-interactive command at a specified time  
+
+- sleep: suspends execution for at least the specified period of time, which can be given as the number of seconds
+  (the default), minutes, hours, or days. After that time has passed (or an interrupting signal has been received),
+  execution will resume.
+  The syntax is:
+	sleep NUMBER[SUFFIX]...
+	where SUFFIX may be:
+		s for seconds (the default)
+		m for minutes
+		h for hours
+		d for days.
+		
+- cron is a time-based scheduling utility program. It can launch routine background jobs at specific times and/or
+  days on an on-going basis. cron is driven by a configuration file called /etc/crontab (cron table), which contains
+  the various shell commands that need to be run at the properly scheduled times. There are both system-wide crontab 
+  files and individual user-based ones. Each line of a crontab file represents a job, and is composed of a so-called 
+  CRON expression, followed by a shell command to execute.
+  Typing crontab -e  will open the crontab editor to edit existing jobs or to create new jobs. Each line of the crontab
+  file will contain 6 fields:
+	*Field	Description	Values
+	*MIN	Minutes	0 to 59
+	*HOUR	Hour field	0 to 23
+	*DOM	Day of Month	1-31
+	*MON	Month field	1-12
+	*DOW	Day Of Week	0-6 (0 = Sunday)
+	*CMD	Command	Any command to be executed
+  Examples:
+	* The entry * * * * * /usr/local/bin/execute/this/script.sh will schedule a job to execute script.sh every minute of every hour of every day of the month, and every month and every day in the week.
+	* The entry 30 08 10 06 * /home/sysadmin/full-backup will schedule a full-backup at 8.30 a.m., 10-June, irrespective of the day of the week.
+
+/*********************************** Symbols **************************************************************//
+Period Slash (./): Used to execute a compiled program
+Pipe symbol (|): used to have one program take as input the output of another.
+Wildcards:
+	? Matches any single character
+	* Matches any string of characters
+	[set] Matches any character in the set of characters, for example [adf] will match any occurrence of a, d, or f
+    [!set] Matches any character not in the set of characters
+	
+/************************************** Documentation ****************************************************//
+Man pages: provide in-depth documentation about many programs and utilities, as well as other topics, including 
+           configuration files, and programming APIs for system calls, library routines, and the kernel.
+		   Typing man with a topic name as an argument retrieves the information stored in the topic's man pages.
+GNU Info System: GNU project's standard documentation format.The Info System is basically free-form, and supports 
+           linked subsections. Functionally, info resembles man in many ways.
+--help: Most commands have an available short description which can be viewed using the --help or the -h option 
+        along with the command or application.
+		
+/************************************** Terminal Commands ****************************************************//
+sudo: allows users to run programs using the security privileges of another user, generally root (superuser). 
+cat: used to type out a file (or combine files)
+head: used to show the first few lines of a file
+tail: used to show the last few lines of a file
+man: used to view documentation.
+halt and poweroff: shutdown -h 
+reboot: issues shutdown -r
+which: locate program
+whereis: Locate the program, source and man files.
+pwd: print working directory
+cd ~ or cd: Change to your home directory (shortcut name is ~ (tilde))
+cd .. : Change to parent directory (..)
+cd - : Change to previous directory (- (minus))
+tree: View array of directories (if it is called with a -d, files will not be shown)
+ls: list contents of present directory (if it is called with -a, hidden files will also be listed)
+ln: create hard links (soft links instead if called with -s).A hard link is a link that directly 
+    associates a name with a given file in an operating system. Unlike a soft link, which changes
+	the pointer when the file is renamed, a hard link still points to the underlying file even if
+	the file name changes.
+pushd: changes directory, saving last directory into a list
+popd: goes to the previous directory called with pushd
+mkdir: create new directory
+rmdir: remove directory (must be empty or use -rf to remove all of its contents)
+cat: view short files
+tac: view a file backwards (Start with last line)
+tail: print the last 10 lines of a file (-x view last x lines)
+head: print the first 10 lines of a file (-x view first x lines)
+touch: used to set or update the access, change, and modify times of files. By default, it resets a
+       file's timestamp to match the current time. (-t set date and timestamp)
+mv: rename a file or move it to another location
+rm: remove a file (-f forcefull remove, -i interactively remove)
+kill: kill -SIGKILL <pid> or kill -9 <pid>. This will terminate a process
+renice: change the priority of a process (ex ps +5, ps -1)
+CTRL-Z: suspend a foreground job
+CTRL-C: terminate a foreground job
+bg:run a process in the background. A job can be placed in the background by suffixing & to the command (Ex. updatedb &)
+fg:run a process in the foreground
+jobs: displays all jobs running in background. The display shows the job ID, state, and command name. PID can also be added
+      by using jobs -l.
+ps: provides information about currently running processes keyed by PID. It will display all processes running under the
+    current shell. The -u option is used to display information of processes for a specified username. The -ef option 
+	displays all the processes in the system in full detail. The option -eLf goes one step further and displays one line of 
+	information for every thread. The option aux displays all processes of all users. The option axo allows you to specify 
+	which attributes you want to view.
+pstree: displays the processes running on the system in the form of a tree diagram showing the relationship between a process
+    and its parent process and any other processes that it created.
+top: Get constant real-time updates (every two seconds by default) of processes. The first line of the top output displays a 
+   quick summary of what is happening in the system (How long the system has been up, How many users are logged on, What is 
+   the load average). The second line displays the total number of processes, the number of running, sleeping, stopped, and 
+   zombie processes. 
+diff: used to compare text files and directories. To compare two files, at the command prompt, type diff [options] <filename1> <filename2>
+whoami: Identify the current user
+who: List the currently logged-on users
