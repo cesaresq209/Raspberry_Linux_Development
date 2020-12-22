@@ -24,6 +24,7 @@ https://www.arm.com/resources/education/online-courses/embedded-linux
 
 Raspberry Training:
 https://www.futurelearn.com/courses/getting-started-with-your-raspberry-pi
+https://www.raspberrypi.org/blog/introducing-raspberry-pi-hats/
 
 /***************Projects**************************************/
 Marty + Robotic Arm:
