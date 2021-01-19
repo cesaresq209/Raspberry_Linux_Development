@@ -18,6 +18,7 @@ VNC
     https://medium.com/@anujdev11/communication-between-arduino-and-raspberry-pi-using-nrf24l01-818687f7f363 
 Windows
     https://www.windowscentral.com/how-use-remove-desktop-app-connect-pc-windows-10-0 
+    https://www.makeuseof.com/tag/remote-connect-windows-pc-raspberry-pi/
 
 Embedded Linux:
 https://blog.kernelcare.com/which-linux-distro-is-best-for-embedded-development?#Which-Linux-Distro-is-Best-for-Embedded-Developmen
