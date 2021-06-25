@@ -1,0 +1,27 @@
+Embedded Linux:
+- Yocto: (Priority:1)
+	-Layers
+	-Image Recipes
+	-Application/Feature Recipes
+	-Class/Inheritance
+	-Toolchain
+	-Bootloader
+	-Outputs: 
+		*Be able to generate customized images
+- Driver Development (BSP) (Priority:3)
+	*Outputs: TBD
+- Peripheral Handling in Linux. (Priority:2)
+	-Identify different methods (Sysfs, etc).
+	-Usage of different methods
+	*Outputs: TBD
+- Application Development (Priority:5)
+	- Run At Startup?
+	- Application Options (management)
+	- All in one application? (Ex. UI, Sensors, actuators,etc.)
+	*Outputs: TBD
+- Kernel (Priority:4)
+	-Modules?
+	-Thread management
+	-Information/Communication handling between threads(applications)
+	-File System
+	*Outputs: TBD
