@@ -1,0 +1,1 @@
+cmd_/home/pi/Linux_Drivers/Hello_World.ko := ld -r  -EL  --build-id=sha1  -T scripts/module.lds -o /home/pi/Linux_Drivers/Hello_World.ko /home/pi/Linux_Drivers/Hello_World.o /home/pi/Linux_Drivers/Hello_World.mod.o;  true
