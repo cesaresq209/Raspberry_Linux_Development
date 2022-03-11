@@ -1,0 +1,11 @@
+Git Commands:
+
+uname -r: outputs linux version running
+
+lsmod: shows the kernel modules installed in the system
+
+dmesg: Prints messages from kernels system buffer
+
+insmod: load kernel module
+
+rmmod: remove kernel module
