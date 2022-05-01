@@ -1,0 +1,1 @@
+cmd_/home/pi/Raspberry_Linux_Development/Code/Kernel_Modules/04_File_Operations/Manual_Creation/Manual_Creation.mod := { echo  /home/pi/Raspberry_Linux_Development/Code/Kernel_Modules/04_File_Operations/Manual_Creation/Manual_Creation.o;  echo; } > /home/pi/Raspberry_Linux_Development/Code/Kernel_Modules/04_File_Operations/Manual_Creation/Manual_Creation.mod
