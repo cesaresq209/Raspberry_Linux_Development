@@ -1,0 +1,1 @@
+cmd_/home/pi/Raspberry_Linux_Development/Code/Kernel_Modules/07_IOCTL/Kernel_Module/Module.symvers := sed 's/ko$$/o/' /home/pi/Raspberry_Linux_Development/Code/Kernel_Modules/07_IOCTL/Kernel_Module/modules.order | scripts/mod/modpost -m -a   -o /home/pi/Raspberry_Linux_Development/Code/Kernel_Modules/07_IOCTL/Kernel_Module/Module.symvers -e -i Module.symvers   -T -
