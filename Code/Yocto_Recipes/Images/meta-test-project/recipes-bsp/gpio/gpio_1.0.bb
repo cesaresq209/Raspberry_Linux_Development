@@ -16,6 +16,6 @@ do_install() {
         install -m 0755 gpio ${D}/${bindir}/gpio
 }
 
-do_image_prepend() {
+do_image:prepend() {
     bb.warn("Hello WOrld recipe was built")
 }
